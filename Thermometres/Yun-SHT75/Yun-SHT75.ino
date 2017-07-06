@@ -90,6 +90,15 @@ void setup()
     Serial.println("MAC address : "+ID);
   }
 
+
+  // Getting the MAC address and using it as an ID
+  getMACProcess.runShellCommand(F("ifconfig wlan0 | grep 134.214 | sed s/.*addr:// | sed s/Bcast:.*//"));
+  while (getMACProcess.available() > 0) {
+    String IP=String(getMACProcess.readStringUntil("\n"));
+    IP.trim();
+    Serial.println("IP address : "+IP);
+  }
+
 }
 
 
