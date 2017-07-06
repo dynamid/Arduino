@@ -49,12 +49,12 @@ void loop(void)
   
   Process getTimeStampProcess;
   getTimeStampProcess.runShellCommand(F("date -R"));
-  String timeStamp;
+  String timeStamp=String("");
   while (getTimeStampProcess.available() > 0) {
-    timeStamp=String(getTimeStampProcess.readStringUntil("\n"));
-    timeStamp.trim();
-    Serial.println("timeStamp : "+timeStamp);
+    timeStamp.concat(String(getTimeStampProcess.readStringUntil("\n")));
   }
+  timeStamp.trim();
+  Serial.println("timeStamp : "+timeStamp);
 
   // call sensors.requestTemperatures() to issue a global temperature
   // request to all devices on the bus
@@ -73,6 +73,6 @@ void loop(void)
   Bridge.put(String("hell//timeStamp"),timeStamp);
   Bridge.put(String("hell//ID"),ID);
   
-  delay(60000);
+  delay(600000);
 }
 
