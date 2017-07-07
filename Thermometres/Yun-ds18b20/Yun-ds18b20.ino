@@ -55,9 +55,10 @@ void loop(void)
   
   Process getTimeStampProcess;
   getTimeStampProcess.runShellCommand(F("date -R"));
+  delay(10);
   String timeStamp=String("");
   while (getTimeStampProcess.available() > 0) {
-    timeStamp.concat(String(getTimeStampProcess.readStringUntil("\n")));
+    timeStamp.concat(String(getTimeStampProcess.readString()));
   }
   timeStamp.trim();
   Serial.println("timeStamp : "+timeStamp);
