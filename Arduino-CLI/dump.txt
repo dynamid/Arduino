@@ -67,6 +67,11 @@ Linking everything together...
 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-objcopy" -O ihex -R .eeprom  "/var/folders/y6/q5yxn54125z8z556xhbn85940000gn/T/arduino_build_44200/Blink.ino.elf" "/var/folders/y6/q5yxn54125z8z556xhbn85940000gn/T/arduino_build_44200/Blink.ino.hex"
 Le croquis utilise 4130 octets (14%) de l'espace de stockage de programmes. Le maximum est de 28672 octets.
 Les variables globales utilisent 148 octets (5%) de mémoire dynamique, ce qui laisse 2412 octets pour les variables locales. Le maximum est de 2560 octets.
+
+
+
+
+
 Redémarrage forcé en cours en 1200bps ouvert/fermé sur le port /dev/cu.usbmodem1411
 PORTS {/dev/cu.Bluetooth-Incoming-Port, /dev/cu.Devicequituesarace-Wire, /dev/cu.usbmodem1411, /dev/tty.Bluetooth-Incoming-Port, /dev/tty.Devicequituesarace-Wire, /dev/tty.usbmodem1411, } / {/dev/cu.Bluetooth-Incoming-Port, /dev/cu.Devicequituesarace-Wire, /dev/cu.usbmodem1411, /dev/tty.Bluetooth-Incoming-Port, /dev/tty.Devicequituesarace-Wire, /dev/tty.usbmodem1411, } => {}
 PORTS {/dev/cu.Bluetooth-Incoming-Port, /dev/cu.Devicequituesarace-Wire, /dev/cu.usbmodem1411, /dev/tty.Bluetooth-Incoming-Port, /dev/tty.Devicequituesarace-Wire, /dev/tty.usbmodem1411, } / {/dev/cu.Bluetooth-Incoming-Port, /dev/cu.Devicequituesarace-Wire, /dev/cu.usbmodem1411, /dev/tty.Bluetooth-Incoming-Port, /dev/tty.Devicequituesarace-Wire, /dev/tty.usbmodem1411, } => {}
